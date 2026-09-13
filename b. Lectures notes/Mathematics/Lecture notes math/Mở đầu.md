@@ -4,26 +4,24 @@ Một trong những động lực lớn nhất thúc đẩy [Donald Knuth]() khi
 
 . . . . (? viết tiếp)
 
-Đối với phép tính thông thường chẳng hạn như phép toán cộng 1+1 = 2  
+Đối với phép tính thông thường chẳng hạn như phép toán cộng 1+1 = 2 , người dùng có thể dễ dàng nhập trực tiếp toán tử số học (arithmetic operators) (+, -), toán tử quan hệ (relational operators) (=) và hai số tự nhiên (1, 2) vào trong phần soạn thảo văn LaTeX. 
 
 ```latex
 \documentclass{article}
 \usepackage[utf8]{vietnam}
 \begin{document}
 
-Phép tính 1 + 1 = 2 là một phép tính sơ khai trong lịch sử phát triển học và nghiên cứu toán học của loài người. Tuy vây, thật bất ngờ khi mãi đến thế kỉ thứ . . . các nhà toán học mới tổng quát cấu trúc đại số . . . bắt đầu từ tiên đề Peano về . . . cho đến khi hai nhà toán học Russell và Whitehead trong tác phẩm . . . xuất bản . . .ở trang . . . mới chứng minh định lý 1 + 1 = 2. 
+Phép tính 1 + 1 = 2 là một trong những phép tính sơ khai trong lịch sử phát triển học và nghiên cứu toán học của loài người. Điều này nghe có vẻ hiển nhiên hay ta còn nói rằng việc 1 + 1 = 2 như là tiên đề vậy. Tuy vây, thật bất ngờ khi mãi đến thế kỉ thứ . . . các nhà toán học mới tổng quát cấu trúc đại số . . . bắt đầu từ tiên đề Peano về . . . cho đến khi hai nhà toán học Russell và Whitehead trong tác phẩm . . . xuất bản . . .ở trang . . . mới chứng minh định lý 1 + 1 = 2. 
 
 \end{document}
 ```
-
-người dùng có thể dễ dàng nhập trực tiếp toán tử (+, -), quan hệ (? dấu =, < > trong toán học được gọi thống nhất là gì nhỉ) và các số tự nhiên cơ bản (1, 2) vào trong phần soạn thảo văn LaTeX. 
 
 (? Ảnh các nhà toán học Peano, Russell, Whitehead)
 
 Điều này cũng tương tự, khi người dùng viết kí hiệu phần trăm 
 
 ```latex
-99%  
+100%  
 ```
 
 các đơn vị đo lượng cơ bản như khối lượng 
@@ -44,7 +42,7 @@ khoảng cách
 10 m 
 ```
 
-biến x, y, z, ..vv.., ẩn số a, b, ...vv... là các chữ cái thông thường 
+biến x, y, z, ..vv.., ẩn số a, b, ...vv... được gọi chung là các [chữ cái thông thường]() 
 
 ```latex
 y = ax + b 
@@ -52,27 +50,46 @@ y = ax + b
 
 Tập hợp các kí hiệu toán tử ... (? gồm gì nữa) có thể được gõ trực tiếp trên bàn phím, người dùng có thể xem lại bài . . . (? bài học nào trong đây) 
 
-Tuy vậy, để người dùng có thể viết toán học ở mức độ phức tạp hơn có các [kí hiệu toán học, chữ cái Hy Lạp] . . .vv. . . thì không thể nhập được trực tiếp trên bàn phím, chẳng hạn như ví dụ sau 
+Tuy vậy, để người dùng có thể viết toán học có các [kí hiệu toán học, chữ cái Hy Lạp]() . . .vv. . . ở mức độ phức tạp hơn,  chẳng hạn như ví dụ sau: 
 
 ```latex
+\documentclass{article}
+\usepackage[utf8]{vietnam}
+\begin{document}
+
 Phương trình toán học từ nguyên lý bất định Heisenberg trong cơ học lượng tử . . . (? trình bày tiếp)
 
-\Delta x \cdot \Delta p \ge \frac{\hbar}{2} 
+\sigma_{x} \cdot \sigma_{p} \ge \frac{\hbar}{2} 
+
+\end{document}
 ```
 
-So với 1 + 1 = 2, 99%, 70kg, 5 cm/s, 10 m trên, việc người dùng viết trực tiếp [toán tử]() nhân ($\cdot$), [kí hiệu Hy Lạp]() $\Delta$, [quan hệ so sánh]() $\geq$, [phân số]()  $\frac{\hbar}{2}$  từ phương trình nguyên lý bất định của Heisenberg vào soạn thảo LaTeX, khi xuất sang trang tài liệu, hệ thống sẽ lập tức báo lỗi `! Missing $ inserted`. 
+So với việc viết 1 + 1 = 2, 100%, 70kg, 5 cm/s, 10 m trên, nếu người dùng viết trực tiếp toán tử số học ($\cdot$), [kí hiệu Hy Lạp]() $\Delta$, toán tử quan hệ $\geq$, [phân số]()  $\frac{\hbar}{2}$  từ phương trình nguyên lý bất định của Heisenberg vào trong phần soạn thảo LaTeX, thì khi xuất sang trang tài liệu, hệ thống sẽ lập tức báo lỗi `! Missing $ inserted`. 
 
 (? Ảnh báo lỗi) 
 
-Hơn nữa, phương trình đó không được căn ở một dòng riêng biệt như bài báo . . . (? bài báo nào) 
+Hơn nữa, phương trình đó không được căn ở một dòng riêng biệt như trong cuốn ["Introduction to quantum mechanics"](https://5.imimg.com/data5/SELLER/Doc/2025/3/498430108/LF/IH/PO/241144082/introduction-to-quantum-mechanics-3rd-edition-book.pdf) tái bản lần thứ ba, trang 19 của nhà vật lý David J.Griffiths đây: 
 
-(https://ntrs.nasa.gov/citations/19840008978)
+<div align="center">
+<img src="LaTeX-Library-project-v1.0.0/b. Lectures notes/Mathematics/images math/Bắc equation.jpg"> 
+</div>
 
-Từ hai điều cơ bản trên, người dùng có thể thấy rằng, để viết được một hay hai nhiều (hệ) phương trình toán học phức tạp (? lặp từ quá nhỉ), chúng cần được đặt vào một môi trường, lệnh riêng biệt khác, để hệ thống có thể dễ dàng phân loại, xác nhận . . . (? đúng ko nhỉ ?) phân tách việc đâu là văn bản chữ thông thường, đâu là văn bản toán học, , giúp hiển thị chính xác các kí hiệu, chữ cái toán học mà người dùng mong muốn xuất hiện trên trang tài liệu, khi xuất ra từ phần soạn thảo LaTeX.  
+Thâm chí, nếu người dùng viết các kí hiệu Hy Lạp $\sigma, \hbar$ trên vào cùng chung dòng với văn bản . . .: 
+. . . 
+
+<div align="center">
+<img src="LaTeX-Library-project-v1.0.0/b. Lectures notes/Mathematics/images math/Screenshot 2026-09-13 095439.jpg"> 
+</div>
+
+Nếu người dùng chỉ viết . . . 
+
+Người dùng có thể thấy, . . .
+
+Từ hai điều vấn đề cơ bản nêu trên, người dùng có thể thấy rằng, để viết được một hay hai nhiều (hệ) phương trình toán học phức tạp (? lặp từ quá nhỉ), chúng cần được đặt vào một môi trường, lệnh riêng biệt khác, để hệ thống có thể dễ dàng phân loại, xác nhận . . . (? đúng ko nhỉ ?) phân tách việc đâu là văn bản chữ thông thường, đâu là văn bản toán học, giúp hiển thị chính xác các kí hiệu, chữ cái toán học mà người dùng mong muốn xuất hiện trên trang tài liệu, khi xuất ra từ phần soạn thảo LaTeX.  
 
 ## inline math, display math: 
 
-. . . (? Giới thiệu) với 1+1 = 2 ở ví dụ . . . chúng được gọi là `inline math` còn nguyên lý bất định hải sơn bắc là `displaymath`. 
+. . . (? Giới thiệu) với 1+1 = 2 ở ví dụ . . . chúng được gọi là `inline math` còn nguyên lý bất định hải sơn bắc là `displaymath`.  
 
 LaTeX cung cấp đầy đủ hai chế độ trình bày toán học chính bao gồm: 
 
@@ -83,7 +100,7 @@ LaTeX cung cấp đầy đủ hai chế độ trình bày toán học chính bao
 
 ###  inline math: 
 
-Để viết toán học ở chế độ **inline math**, người dùng cần viết chúng vào bên trong một trong ba cách sau: 
+Để viết toán học ở chế độ **inline math**, người dùng cần phải viết chúng vào bên trong một trong ba cách sau: 
 
 1. Một cặp dấu đô la đơn:`$...$`
 2. Một cặp dấu ngoặc tròn  `\(...\)`
@@ -95,7 +112,7 @@ LaTeX cung cấp đầy đủ hai chế độ trình bày toán học chính bao
 \end{math}
 ```
 
-Điều này có nghĩa là người dùng có thể viết phương trình toán học nổi tiếng từ định lý Pytago về mối quan hệ giữa hai cạnh góc vuông và một cạnh huyền trong một tam giác vuông ở chế độ **inline math** bằng một cặp dấu đô la đơn 
+Điều này có nghĩa là người dùng có thể viết phương trình toán học nổi tiếng từ định lý Pythagoras về mối quan hệ giữa hai cạnh góc vuông và một cạnh huyền trong một tam giác vuông ở chế độ **inline math** bằng một cặp dấu đô la đơn 
 
 ```latex
 \documentclass{article}
@@ -135,7 +152,7 @@ mà kết quả cho ra được đều sẽ là giống nhau:
 
 Phương trình định lý Pythagoras:  $x^2 + y^2 =z^2$ 
 
-Việc lựa chọn một trong ba cách trên để viết **inline math** tùy thuộc vào sở thích, thói quen cá nhân của người dùng.  
+Việc lựa chọn một trong ba cách trên để viết **inline math** tùy thuộc vào sở thích, thói quen cá nhân của người dùng. Tuy vậy, quen thuộc và cơ bản nhất vẫn là hai cách đầu tiên trong ba cách viết trên. 
 
 > [!WARNING]  
 > Nếu như người dùng không viết các dấu gạch dưới `_`, dấu mũ `^` và các [kí hiệu, chữ cái toán học]() khác vào một trong ba cách viết toán học ở chế độ **inline math** trên, thì hệ thống sẽ báo lỗi `! Missing $ inserted.`
@@ -178,7 +195,7 @@ Chú ý trên cũng được áp dụng tương tự đối với việc ngườ
 \end{displaymath}
 ```
 
-Tương tự như **inline math**, tùy thuộc vào sở thích, thói quen cá nhân của người dùng để có thể chọn một trong ba cách trên để viết toán học ở chế độ **display math**, mà vẫn đảm bảo kết quả cho ra được vẫn là giống nhau. (? Quan điểm này cũng sẽ được thay đổi chút ít khi học lập trình [marco]())
+Tương tự như **inline math**, tùy thuộc vào sở thích, thói quen cá nhân của người dùng để có thể chọn một trong ba cách trên để viết toán học ở chế độ **display math**, mà vẫn đảm bảo kết quả cho ra được vẫn là giống nhau. (? Quan điểm này cũng sẽ được thay đổi chút ít khi học lập trình [marco]() , nhưng trước mắt ta hãy cứ tiếp tục với vấn đề này đi đã)
 
 Ví dụ về việc viết toán học ở chế độ `display math` với phương trình logarithm của một tích là tổng của logarit của các thừa số. Trong đó:
 
@@ -186,7 +203,10 @@ Ví dụ về việc viết toán học ở chế độ `display math` với ph�
 
 ```latex
 \documentclass{article}
+% --- Cấu hình ngôn ngữ tiếng Việt ---
+\usepackage[utf8]{vietnam}
 \begin{document} % Sử dụng cặp dấu $$ để viết phương trình logarithm
+Phương trình logarithm của một tích là tổng của logarit của các thừa số: 
 $$\log_b{xy} = \log_b{x} + \log_b{y}$$
 \end{document}
 ```
@@ -195,7 +215,10 @@ $$\log_b{xy} = \log_b{x} + \log_b{y}$$
 
 ```latex
 \documentclass{article} % Sử dụng cặp dấu \[\] để viết phương trình logarithm
+% --- Cấu hình ngôn ngữ tiếng Việt ---
+\usepackage[utf8]{vietnam}
 \begin{document}
+Phương trình logarithm của một tích là tổng của logarit của các thừa số: 
 \[\log_b{xy} = \log_b{x} + \log_b{y}\] 
 \end{document}
 ```
@@ -204,7 +227,10 @@ $$\log_b{xy} = \log_b{x} + \log_b{y}$$
 
 ```latex
 \documentclass{article}
+% --- Cấu hình ngôn ngữ tiếng Việt ---
+\usepackage[utf8]{vietnam}
 \begin{document}
+Phương trình logarithm của một tích là tổng của logarit của các thừa số: 
 \begin{displaymath} % Sử dụng môi trường displaymath để viết phương trình logarithm
 \log_b{xy} = \log_b{x} + \log_b{y}\
 \end{displaymath}
@@ -217,7 +243,7 @@ $$
 \log_b{xy} = \log_b{x} + \log_b{y}
 $$
 
-Để viết các phương trình có số được đánh ở bên cạnh theo thứ tự tăng dần, nhằm về sau giúp người dùng [tham chiếu chéo phương trình] , người dùng sử môi trường `equation`
+Để viết các phương trình có số được đánh ở bên cạnh theo thứ tự tăng dần, nhằm về sau giúp người dùng [tham chiếu chéo phương trình]() , người dùng lúc này sẽ sử một môi trường mới là môi trường `equation`
 
 ```latex
 \begin{equation} 
@@ -225,11 +251,14 @@ $$
 \end{equation}
 ```
 
-Để dễ hình dung môi trường `equation`, nếu như người dùng thay các cặp dấu, môi trường `displaymath` ở ví dụ . . . bằng môi trường `equation`, thì người dùng có thể thấy rằng phương trình logarithm được đặt bên trong môi trường đó sẽ được LaTeX tự động đánh thêm một số thứ tự từ (1) đến số lượng cuối cùng . . . (? số lượng cuối cùng gì) có trong phần soạn thảo và mặc định số đó được nằm ở bên phải phần toán học đó có trong trang tài liệu.  
+Để dễ hình dung môi trường `equation`, nếu như người dùng thay các cặp dấu, môi trường `displaymath` ở ví dụ . . . bằng môi trường `equation`, thì người dùng có thể thấy rằng phương trình logarithm được đặt bên trong môi trường đó sẽ được LaTeX tự động đánh thêm một số thứ tự bắt đầu từ (1) đến số lượng cuối cùng . . . (? số lượng cuối cùng gì) có trong phần soạn thảo và mặc định số đó được nằm ở bên phải phần toán học đó có trong trang tài liệu.  
 
 ```latex
 \documentclass{article}
+% --- Cấu hình ngôn ngữ tiếng Việt ---
+\usepackage[utf8]{vietnam}
 \begin{document}
+Phương trình logarithm của một tích là tổng của logarit của các thừa số:
 \begin{equation} % Sử dụng môi trường equation để đánh số thứ tự ở phương trình logarit
 \log_b{xy} = \log_b{x} + \log_b{y}
 \end{equation}
@@ -247,14 +276,12 @@ $$
 Trong một số tài liệu toán học, đôi khi người dùng cũng thế thấy rằng số thứ tự được đánh bên cạnh phần toán học đó nằm ở bên trái thay vì bên phải mặc định như ở hình dưới đây 
 
 <div align="center"> 
-
-<img src="LaTeX-Library-project-v1.0.0/Toán học/images math/Kakeya.jpg" alt="Kakeya">
-
+<img src="LaTeX-Library-project-v1.0.0/b. Lectures notes/Mathematics/images math/Kakeya.jpg" alt="Kakeya">
 </div>
 <center>Ảnh được cắt từ trang 1 bài báo toán học <a src="https://drive.google.com/file/d/1dlpgd5Q5AAOsaCFQK5MGRisJNUPmgxFu/view?usp=sharing" target="_blank">"A STREAMLINED PROOF OF THE KAKEYA SET CONJECTURE IN \(\mathbb{R^3}\)</a> của ba nhà toán học <a src="https://math.mit.edu/~lguth/" target="_blank">Larry Guth</a>, <a src="https://sites.google.com/view/hongwang/home" target="_blank">Vương Hồng</a>, <a src="https://jzahl.github.io/" target="_blank">Joshua Zahl</a></center>
 
 <div align="center">
-	<img src="LaTeX-Library-project-v1.0.0/Toán học/images math/Guth Hong Zahl.jpg" alt="Guth Hong Zahl">
+	<img src="LaTeX-Library-project-v1.0.0/b. Lectures notes/Mathematics/images math/Guth Hong Zahl.jpg" alt="Guth Hong Zahl">
 </div>
 <center>Nhà toán học Lary Guth, nhà toán học Vương Hồng và nhà toán học Joshua Zahl</center>
 
@@ -268,7 +295,10 @@ leqno
 
 ```latex
 \documentclass[leqno]{article} % 
+% --- Cấu hình ngôn ngữ tiếng Việt ---
+\usepackage[utf8]{vietnam}
 \begin{document}
+Phương trình logarithm của một tích là tổng của logarit của các thừa số:
 \begin{equation} % 
 \log_b{xy} = \log_b{x} + \log_b{y}
 \end{equation}
@@ -281,6 +311,8 @@ $$
 \log_b{xy} = \log_b{x} + \log_b{y}
 $$
 
+Đối với các bài viết . . . (phần toán học được đánh số 1.1, ..vv..) (đang viết ví dụ tại đây https://www.texpage.com/project/user/6b3729dd-7669-4c54-9f27-b53a521a0cd5/be79ef56-b97e-44ac-a215-add1800d4c80 và viết phần bài học ở [[Toán]]. 
+
 Nếu như người dùng không muốn xuất hiện số thứ tự bên cạnh phương trình toán học khi viết chúng bằng môi trường `equation`, thì người dùng có thể quay lại ba cách đầu tiên mà người viết đã hướng dẫn ban đầu khi viết toán học ở chế độ [`display math`](), hoặc người dùng cũng có thể sử dụng một cách mới sau.  
 
 Trước tiên người dùng nhớ cần phải khai báo package
@@ -290,6 +322,8 @@ Trước tiên người dùng nhớ cần phải khai báo package
 ```
 
 ở phần . . . (? vị trí đặt lệnh `amsmath`)
+
+(? package amsmath này là gì ? mục đích của package này là gì ?)
 
 Package `amsmath` còn cung cấp cho người dùng một số tùy chọn để sắp xếp và hiển thị bố cục phương trình toán học sao cho phù hợp với tài liệu người dùng, ngay cả khi các phương trình rất dài hoặc nếu người dùng phải đưa nhiều phương trình vào cùng một dòng, để tránh việc viết phương trình có thể thiếu tính linh hoạt, dẫn đến việc chồng chéo hoặc thậm chí cắt bớt một phần phương trình khi nó quá dài [?].  
 
@@ -338,7 +372,7 @@ Có thể thấy ở đoạn mã trên, nếu người dùng vô tình để kho
 
 . . . (? ảnh báo lỗi) 
 
-Ta khắc phục lỗi ở đoạn mã ở ví dụ . . . (? đánh số ví dụ) bằng cách xóa đi khoảng trắng giữa hai biểu thức đó
+Ta khắc phục lỗi ở đoạn mã ở ví dụ . . . (? đánh số ví dụ) bằng cách xóa đi khoảng trắng giữa hai biểu thức đó 
 
 ```latex
 \documentclass{article}
